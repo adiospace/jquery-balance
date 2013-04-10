@@ -1,0 +1,9 @@
+.balanced {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.balanced-bottom {
+  display: table-cell; 
+  vertical-align: bottom; 
+}
