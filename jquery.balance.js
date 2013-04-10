@@ -1,16 +1,20 @@
 (function($) {
-  $.fn.balance = function (config) {
-
+  $.fn.balance = function (option) {
     return this.each(function() {
-      var $this = $(this);
-      var data = $this.data();
-      var options = $.extend({}, $.fn.balance.defaults, config, data);
-      var classes = options.cssClass, height = 0;
-      var sel = options.selector;
-      var align = options.align;
+      var $this = $(this),
+        data    = $this.data(),
+        options = $.extend({}, $.fn.balance.defaults, option, data),
+        classes = options.cssClass,
+        height  = 0;
 
-      if (align == 'bottom') classes += ' ' + options.cssClass + '-bottom';
-      $this.find(sel).addClass(classes).each(function() {
+      // align bottom
+      if (options.align == 'bottom') {
+        classes += ' ' + options.cssClass + '-bottom';
+      }
+      
+      // balance height child elements 
+      // by setting the max height
+      $this.find(options.selector).addClass(classes).each(function() {
         var elHeight = $(this).outerHeight(true);
         if (elHeight > height) height = elHeight;
       }).outerHeight(height);
@@ -18,7 +22,7 @@
   };
 
   $.fn.balance.defaults = {
-    align: 'bottom', // top or bottom
+    align: 'top', // top or bottom
     selector: '.balanced',
     cssClass: 'balanced'
   };

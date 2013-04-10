@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<style type="text/css">
+			.wrap {
+				width: 500px;
+				margin: 0 auto;
+			}
+			.clearfix {
+			  	content: "";
+			  	display: table;
+			  	clear: both;
+			}
+
+			.itm {
+				float: left;
+				width: 140px;
+			}
+
+			.with-pad {
+				padding: 10px;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="../jquery.balance.css">
+	</head>
+	<body>
+	<div class="clearfix" data-toggle="balance" data-align="bottom" data-selector="h3">
+		<div class="itm">
+			<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+
+		<div class="itm">
+			<h3 class="with-pad">Lorem ipsum dolor sit amet, consectetur , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+
+		<div class="itm">
+			<h3>Lorem ipsum dolor sit amet</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+
+	<div class="clearfix" data-toggle="balance">
+		<div class="itm">
+			<h3 class="balanced">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+
+		<div class="itm">
+			<h1 class="with-pad balanced">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+
+		<div class="itm">
+			<p class="balanced">Lorem ipsum dolor sit amet</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="../jquery.balance.js"></script>
+	</body>
+</html>
