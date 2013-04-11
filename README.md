@@ -19,11 +19,12 @@ You can change the defaults by using `data-selector="jQuery selector"` and `data
 
 
 - `align` : `top` or `bottom`, defaults to `top`. Aligns text vertically.
-- `selector`: jQuery selector. defaults to `.balanced`. Search for children elements.
+- `selector`: jQuery selector. defaults to `.balanced`. Uses this selector to search for children elements.
 -  `cssClass`: `balanced`. Class name to apply to children elements. If you change this, make sure you also change the CSS.
 
-$.fn.balance.defaults = {
-    align: 'top',
-    selector: '.balanced', 
-    cssClass: 'balanced'
-  };
+
+    $.fn.balance.defaults = {
+        align: 'top',
+        selector: '.balanced', 
+        cssClass: 'balanced'
+    };
