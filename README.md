@@ -24,8 +24,8 @@ You can change the defaults by using `data-selector="jQuery selector"` and `data
 
 
 
-        $.fn.balance.defaults = {
-            selector: '.balanced', 
-            align: 'top',
-            cssClass: 'balanced'
-        };
+    $.fn.balance.defaults = {
+        selector: '.balanced', 
+        align: 'top',
+        cssClass: 'balanced'
+     };
