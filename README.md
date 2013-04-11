@@ -15,18 +15,21 @@ You can change the defaults by using `data-selector="jQuery selector"` and `data
 
     <div data-toggle="balance" data-align="bottom" data-selector="h3"></div>
 
+## Using it manually
+
+    $('.parent').balance({align: 'bottom', selector: 'h3'});
+    
 ## Options
-
-
-- `align` : `top` or `bottom`, defaults to `top`. Aligns text vertically.
-- `selector`: jQuery selector. defaults to `.balanced`. Uses this selector to search for children elements.
-- `cssClass`: `balanced`. Class name to apply to children elements. If you change this, make sure you also change the CSS.
-
-
-You can also change the options by using `$.fn.balance.defaults`.
 
     $.fn.balance.defaults = {
         selector: '.balanced', 
         align: 'top',
         cssClass: 'balanced'
     };
+
+- `align` : `top` or `bottom`, defaults to `top`. Aligns text vertically.
+- `selector`: jQuery selector. defaults to `.balanced`. Uses this selector to search for children elements.
+- `cssClass`: `balanced`. Class name to apply to children elements. If you change this, make sure you also change the CSS.
+
+
+
