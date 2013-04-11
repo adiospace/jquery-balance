@@ -23,8 +23,9 @@ You can change the defaults by using `data-selector="jQuery selector"` and `data
 -  `cssClass`: `balanced`. Class name to apply to children elements. If you change this, make sure you also change the CSS.
 
 
-    $.fn.balance.defaults = {
-        align: 'top',
-        selector: '.balanced', 
-        cssClass: 'balanced'
-    };
+
+        $.fn.balance.defaults = {
+            selector: '.balanced', 
+            align: 'top',
+            cssClass: 'balanced'
+        };
