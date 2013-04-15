@@ -1,7 +1,5 @@
 # Balance
 
-**Note:** This plugins affects layout and as such it should be used only if truly needed. Always favor CSS over JavasScript for layouting.
-
 Balance takes a group of elements, make them the same height (uses the height of the heighest element) and align them vertically. 
 
 ## Data Api
