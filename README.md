@@ -2,6 +2,9 @@
 
 Balance takes a group of elements, make them the same height (uses the height of the heighest element) and align them vertically. 
 
+**Note** You should make sure you set the same margins and padding to the elements you need to balance. 
+
+
 ## Data Api
 
 You can use `data-toggle="balance"` on a parent element to enable balance. By default, it will balance all its children with
