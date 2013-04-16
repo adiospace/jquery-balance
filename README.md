@@ -2,7 +2,7 @@
 
 Balance takes a group of elements, make them the same height (uses the height of the heighest element) and align them vertically. 
 
-**Note:** You should make sure you set the same margins and padding to the elements you need to balance. 
+**Note:** Make sure you set the same margins and padding to the balanced elements. 
 
 
 ## Data Api
