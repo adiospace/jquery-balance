@@ -4,7 +4,8 @@
       var $this = $(this),
         data    = $this.data(),
         options = $.extend({}, $.fn.balance.defaults, option, data),
-        $children = $this.find(options.selector),
+        $parent = options.parent || $this,
+        $children = $parent.find(options.selector),
         classes = options.cssClass,
         height  = 0;
 
@@ -12,6 +13,7 @@
       if (options.align == 'bottom') {
         classes += ' ' + options.cssClass + '-bottom';
       }
+
       // balance height child elements 
       // by setting the max height
       $children
