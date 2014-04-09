@@ -13,7 +13,6 @@
         $children.css({minHeight: 0});
 
         if($(window).width() > options.minWidth){
-          console.log('worked');
           var maxElHeight = Math.ceil(Math.max.apply(null, $children.map(function() {
             return $(this).height(); 
           }))) + 'px';

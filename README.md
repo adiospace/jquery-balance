@@ -37,6 +37,8 @@ You can specify a minimum window width needed to trigger the ballance with `data
 - `align` : `top` or `bottom`, defaults to `top`. Aligns text vertically.
 - `selector`: jQuery selector. defaults to `.balanced`. Uses this selector to search for children elements.
 - `cssClass`: `balanced`. Class name to apply to children elements. If you change this, make sure you also change the CSS.
+- `minWidth`: `0`. Mininum window width needed to balance the elements.
+- `updateResize`: `false`. Set this one to `true` if you need to rebalance the elements when the browser window resizes.
 
 
 
